@@ -20,8 +20,13 @@ cask "smith-app" do
     Smith by Ohkey requires Docker or OrbStack to run containers.
     Install with: brew install --cask docker
 
+    FIRST RUN: Build the required Docker image:
+      cd "/Applications/Smith.app/Contents/Resources/_up_/docker"
+      docker build -t smith-agent:latest .
+
     On first launch, macOS may show "unidentified developer" warning.
-    Right-click the app and select "Open" to bypass.
+    Right-click the app and select "Open" to bypass, or run:
+      xattr -cr /Applications/Smith.app
 
     Learn more: https://trysmith.dev
   EOS
