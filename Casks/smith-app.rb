@@ -1,6 +1,6 @@
 cask "smith-app" do
-  version "0.3.0"
-  sha256 "668beea9d31cbb056ee42c8acba4ee4c001a28e71aef15ecbc3688d84b54597c"
+  version "0.3.1"
+  sha256 "73e0723c2f372245a1630c4298fb7ee0d71088313ee12f142700707b902f1583"
 
   url "https://github.com/tomashrdlicka/homebrew-smith/releases/download/v#{version}/Smith_#{version}_aarch64.dmg"
   name "Smith"
