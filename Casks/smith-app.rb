@@ -10,7 +10,7 @@ cask "smith-app" do
   depends_on macos: ">= :catalina"
   depends_on arch: :arm64
 
-  app "Smith.app", no_quarantine: true
+  app "Smith.app"
 
   zap trash: [
     "~/.smith",
@@ -23,6 +23,9 @@ cask "smith-app" do
     FIRST RUN: Build the required Docker image:
       cd "/Applications/Smith.app/Contents/Resources/_up_/docker"
       docker build -t smith-agent:latest .
+
+    If macOS shows "unidentified developer" warning, reinstall with:
+      brew reinstall --cask --no-quarantine smith-app
 
     Learn more: https://trysmith.dev
   EOS
