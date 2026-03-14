@@ -1,30 +1,29 @@
 # Smith by Ohkey
 
-Homebrew tap for **Smith** - orchestrate multiple Claude Code AI agents in isolated Docker containers.
+Homebrew tap for **Smith** -- an AI coding agent workbench that orchestrates up to 9 Claude Code agents with real-time terminals, git worktree isolation, and automated pipelines.
 
 ## Installation
 
 ```bash
 brew tap tomashrdlicka/smith
-brew install --cask smith-app
+brew install --cask smith
 ```
 
 ## Requirements
 
-- macOS 10.15 (Catalina) or later
-- Apple Silicon (M1/M2/M3)
-- Docker or OrbStack
+- macOS 13 (Ventura) or later
+- Apple Silicon (M1/M2/M3/M4)
 
 ## Updating
 
 ```bash
-brew upgrade --cask smith-app
+brew upgrade --cask smith
 ```
 
 ## Uninstalling
 
 ```bash
-brew uninstall --cask smith-app
+brew uninstall --cask smith
 ```
 
 ## About
