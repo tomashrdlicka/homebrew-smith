@@ -12,6 +12,10 @@ cask "smith" do
 
   app "Smith.app"
 
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-cr", "#{appdir}/Smith.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/Smith",
     "~/Library/Caches/com.smith.app",
